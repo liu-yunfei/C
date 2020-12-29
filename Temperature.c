@@ -17,13 +17,13 @@ read, so it will return 1 if it reads a number, but it won’t return 1 if the u
 == operator tests for equality, so you can use it to compare the return value of scanf()
 with 1 .
 */
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
     double temp;
 
     printf("Please enter the temperature in Fahrenheit: ");
-    scanf("%lf",&temp);
+    scanf("%lf", &temp);
     Temperatures(temp);
 
     return 0;
@@ -32,8 +32,8 @@ int main(void)
 void Temperatures(double F)
 {
     double C, K;
-    const double rate = (5.0/9.0), diff = 32, kelvin = 273.16;
-    C = rate*(F-diff);
+    const double rate = (5.0 / 9.0), diff = 32, kelvin = 273.16;
+    C = rate * (F - diff);
     K = C + kelvin;
-    printf("The temperature is\n%lf in Fahrenheit\n%lf in Celsius\n%lf in Kelvin\n",F,C,K);
+    printf("The temperature is\n%lf in Fahrenheit\n%lf in Celsius\n%lf in Kelvin\n", F, C, K);
 }
