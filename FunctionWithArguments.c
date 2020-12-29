@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
     int times;
 
     printf("Please enter the times: ");
-    scanf("%d",&times);
+    scanf("%d", &times);
 
     ring(times);
     return 0;
@@ -12,7 +12,7 @@ int main(void)
 
 void ring(int number)
 {
-    while (--number>-1)
+    while (--number > -1)
     {
         printf("Bell rings\a\n");
     }
