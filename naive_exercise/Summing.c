@@ -9,7 +9,7 @@ int main(void)
     while (scanf("%ld", &num) == 1)
     {
         sum += num;
-        printf("Please ener next integer (q to quit): ");
+        printf("Please enter next integer (q to quit): ");
     }
     printf("The sum is %ld.\n", sum);
 
