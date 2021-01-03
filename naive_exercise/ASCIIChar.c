@@ -1,3 +1,7 @@
+/*
+for (initialize ; test ; update)
+    statement
+*/
 #include <stdio.h>
 int main(void)
 {
