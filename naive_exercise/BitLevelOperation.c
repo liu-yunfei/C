@@ -22,8 +22,13 @@ int main() {
     printf(" oct form is %s",change(code,8,value));
     printf(" dec form is %s",change(code,10,value));
     printf(" hex form is %s\n", change(code,16,value));
-    int x=100000;
-    short y = (short) x;
-    printf("%d\n",y);
+    int x;
+    scanf("%d",&x);
+    x=x | (x>>1);
+    x=x | (x>>2);
+    x=x | (x>>4);
+    printf("%d\n",x);
+    x=x-(x>>1);
+    printf("%d\n",x);
     return 0;
 }
